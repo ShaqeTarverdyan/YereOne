@@ -1,0 +1,38 @@
+.recentWorksDiv {
+    width: 1280px;
+    padding: 3vw;
+    text-align: center;
+}
+.headerStyle {
+    background-color: #f9f9f9;
+    max-width: 1200px;
+    height: 3vw;
+    margin:auto;
+    
+    font-size: 1.5vw;
+    cursor: pointer;
+    padding-top: 1vw
+}
+.workDiv {
+    width:25%;
+    float: left;
+    text-align: center;
+   
+}
+.recentWorksDiv button {
+    color: #03acc1;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border: 2px solid #03acc1;
+    font-weight: 700;
+    font-family: inherit;
+    border-radius: 5px;
+    background: 0 0;
+    padding: 7px 10px;
+    margin-top:20px;
+}
+.recentWorksDiv button:hover{
+    color: white;
+    background: #03acc1;
+}

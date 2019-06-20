@@ -1,0 +1,10 @@
+.WordpressServicesDiv {
+    width: 1280px;
+   
+}
+.WordpressServiceDiv {
+    width:17%;
+    float: left;
+    text-align: center;
+    margin: 4%
+}

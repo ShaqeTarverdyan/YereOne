@@ -9,7 +9,6 @@ import {
     Container,
     Responsive,
     Visibility,
-    Icon
 } from 'semantic-ui-react'
 
 const getWidth = () => {
@@ -43,7 +42,7 @@ class DesktopContainer extends React.Component {
                         <Menu
                             tabular='right'
                             secondary={!fixed}
-                            fixed={fixed ? 'top' : null}
+                            // fixed={fixed ? 'top' : null}
                         >
                             <Container>
                                 <Logo />

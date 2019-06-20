@@ -1,0 +1,25 @@
+.servicesStyle {
+    width: 1280px;
+    padding: 3vw;
+}
+.headerStyle {
+    background-color: #f9f9f9;
+    /* max-width: 1200px; */
+    height: 3vw;
+    margin:auto;
+    text-align: center;
+    font-size: 1.5vw;
+    cursor: pointer;
+    padding-top: 1vw
+}
+.serviceDiv {
+    width:17%;
+    float: left;
+    text-align: center;
+    margin: 4%
+
+}
+
+.nameDiv {
+    font-size: 1rem;
+}

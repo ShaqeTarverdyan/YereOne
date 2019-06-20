@@ -8,7 +8,7 @@ import './headerStyle.css'
 const HeaderMenu = () => {
     return (
             <Menu.Menu position='left'  >
-                 <Menu.Item  as={Link}  to='/services' style={ MenuItemStyle }> Services </Menu.Item> 
+                 <Menu.Item  as={Link}  to='/service' style={ MenuItemStyle }> Services </Menu.Item> 
                  <Menu.Item as={Link} to='/portfolio' style={ MenuItemStyle } > Portfolio </Menu.Item> 
                  <Menu.Item as={Link} to='/about'  style={ MenuItemStyle }> About </Menu.Item>
                 <Menu.Item as={Link} to='/contacts' style={ MenuItemStyle } > Contacts </Menu.Item> 

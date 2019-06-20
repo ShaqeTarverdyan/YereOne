@@ -2,7 +2,6 @@ import React from 'react';
 import DesktopContainer from './DesktopContainer';
 import MobileContainer from './MobileContainer';
 import './headerStyle.css';
-import { Menu, Container } from 'semantic-ui-react'
 
 
 const Header = ({ children}) => {

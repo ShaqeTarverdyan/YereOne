@@ -1,0 +1,25 @@
+.contents {
+    width: 1280px;
+    text-align: center;
+    margin: 10px;
+ 
+    
+}
+.contentDiv {
+display: block;
+width: 33.3%;
+float: left;
+padding: 3vw;
+}
+.iconStyle {
+    font-size: 20px;
+    color: #03acc1;
+    border-radius: 50px;
+    border: 1px solid #d0d0d0;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+    background-color: #f5f5f5;
+    transition: all .5s;
+    margin-left: 45%
+}
