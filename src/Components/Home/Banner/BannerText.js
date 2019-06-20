@@ -6,11 +6,9 @@ import * as action from '../../../StateManagement/Actions/actions';
 import * as helperFunction from '../../../helper';
 
 class BannerText extends React.Component {
-    // componentDidMount() {
-    //         this.props.getBannerData();
-    // }
-
-
+    componentDidMount() {
+            this.props.getBannerData();
+    }
     render() {
         if (this.props.loading) {
             return (

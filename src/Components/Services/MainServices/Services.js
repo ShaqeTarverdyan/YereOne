@@ -8,11 +8,8 @@ import * as helperFunction from '../../../helper';
 
 
 class Services extends React.Component {
-    componentDidMount() {
-        if (!this.props.servicesData) {
-            this.props.getServiceData()
-        }
-
+    componentDidMount() {        
+            return (this.props.getServiceData())
     }
     render() {
         if (this.props.loading) {
