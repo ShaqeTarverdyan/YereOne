@@ -20,7 +20,7 @@ export const getBannerDataSucces = (resp) => {
 }
 export const getBannerData = () => {
     return (dispatch) => {
-        dispatch(loading());
+        // dispatch(loading());
         return axios.get('https://api.myjson.com/bins/tuhst')
            .then(resp => {
                dispatch(getBannerDataSucces(resp.data))
@@ -39,7 +39,7 @@ export const getServiceDataSucces = (resp) => {
 }
 export const getServiceData = () => {
     return (dispatch) => {
-        dispatch(loading());
+        // dispatch(loading());
         return axios.get('https://api.myjson.com/bins/7p0p1')
             .then(resp => {
                 dispatch(getServiceDataSucces(resp.data))

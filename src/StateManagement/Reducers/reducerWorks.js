@@ -19,7 +19,6 @@ const reducerWorks = (state = initialState, action) => {
                 loading: false,
                 error:false,
             }
-            console.log('resuletAfterFetchWorks',resuletAfterFetchWorks)
             return  resuletAfterFetchWorks
         default:
             return newState

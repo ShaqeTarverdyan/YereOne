@@ -23,7 +23,6 @@ class Works extends React.Component {
             )
         }
         const workFourHomePage = this.workFourHomePage()
-        console.log('render',workFourHomePage)
         return (
             <div>
 
