@@ -13,27 +13,28 @@ import store from '../../StateManagement/Store/store';
 
 class Home extends React.Component {
     componentDidMount() {
-        console.log('component',store.getState())
+        this.props.getBannerData()
+        this.props.getServiceData()
+        console.log('componentDidMountHome',store.getState())
         
     }
     render() {
         if (this.props.loading) {
             return (
-                <div style={{ width: '1280px', height: '100vh' }}>
+                 <div style={{ width: '1280px', height: '100vh' }}>
                     {helperFunction.LoaderExampleLoader()}
                 </div>
             )
         }
         const bannerData = store.getState().reducerBanner.bannerData;
         console.log('bannerData', bannerData)
-       // console.log('render',store.getState().reducerBanner)
         return (
             <>
                 <Banner />
                 <MainServices  />
                 <RecentWorks />
                 <WhyChooseYereone />
-                <Testimonials />
+                <Testimonials />   
             </>
         );
     }
