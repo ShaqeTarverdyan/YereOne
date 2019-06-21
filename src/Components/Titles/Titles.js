@@ -29,7 +29,7 @@ export const WordpressService = () => {
 export const RecentWorks = () => {
     return (
         <Container className='headerStyle'>
-            <Link to='/services'>Recent Works</Link>
+            <Link to='/portfolio'>Recent Works</Link>
         </Container>
     );
 }

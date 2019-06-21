@@ -8,6 +8,8 @@ import * as helperFunction from '../../../helper';
 class BannerText extends React.Component {
     componentDidMount() {
             this.props.getBannerData();
+
+
     }
     render() {
         if (this.props.loading) {

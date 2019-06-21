@@ -1,11 +1,10 @@
 const initialState = {
     loading: false,
     error: false,
-    servicesData: [],
-    bannerData:{}
+    worksData: []
 }
 
-const reducerHomePage = (state = initialState, action) => {
+const reducerWorks = (state = initialState, action) => {
   
     const newState = { ...state }
     switch (action.type) {
@@ -13,16 +12,17 @@ const reducerHomePage = (state = initialState, action) => {
             return { loading: true }
         case 'ERROR':
             return { error: true }
-        case 'GET_DATA_FOR_HOME_PAGE':
-            const resuletAfterFetch = {
+        case 'GET_WORKS_DATA':
+            const resuletAfterFetchWorks = {
                 ...newState,
+                worksData: action.payload,
                 loading: false,
                 error:false,
-                servicesData: action.payload,
             }
-            return  resuletAfterFetch
+            console.log('resuletAfterFetchWorks',resuletAfterFetchWorks)
+            return  resuletAfterFetchWorks
         default:
             return newState
     }
 }
-export default reducerHomePage;
+export default reducerWorks;

@@ -8,8 +8,8 @@ import * as helperFunction from '../../../helper';
 
 
 class Services extends React.Component {
-    componentDidMount() {        
-            return (this.props.getServiceData())
+    componentDidMount() {
+        return (this.props.getServiceData())
     }
     render() {
         if (this.props.loading) {
@@ -23,8 +23,8 @@ class Services extends React.Component {
         return (
             <>
                 {
-                    this.props.servicesData.map((service, i) =>
-                        <Service service={service} key={i} />
+                    this.props.servicesData.map((service, i) => 
+                            < Service service = { service } key = { i } />
                     )
                 }
             </>

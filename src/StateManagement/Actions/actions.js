@@ -31,7 +31,6 @@ export const getBannerData = () => {
     }
 }
 
-
 export const getServiceDataSucces = (resp) => {
     return {
         type: 'GET_SERVICE_DATA',
@@ -51,20 +50,20 @@ export const getServiceData = () => {
     }
 }
 
-export const getDataForHomePageSucces = (resp) => {
+
+export const getWorkDataSucces = (resp) => {
     return {
-        type:'GET_DATA_FOR_HOME_PAGE',
+        type:'GET_WORKS_DATA',
         payload:resp
     }
-   
 }
-export const getDataForHomePage = () => {
+
+export const getWorkData = () => {
     return (dispatch) => {
         dispatch(loading());
-        return  axios.get('https://api.myjson.com/bins/m40c5')
+        axios.get('https://api.myjson.com/bins/hbrsp')
             .then(resp => {
-                console.log('fetch', resp)
-                dispatch(getDataForHomePageSucces(resp.data.bannerData))
+                dispatch(getWorkDataSucces(resp.data.works))
             })
             .catch(error => {
                 throw (error);

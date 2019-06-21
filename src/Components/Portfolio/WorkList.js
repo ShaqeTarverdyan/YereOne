@@ -1,20 +1,17 @@
 import React from 'react';
-import './recentworksStyle.css';
-import Work from './Work';
-import { recentWorks } from '../../../data';
+import Work from '../Home/RecentWorks/Work';
+// import { recentWorks } from '../../../data';
 import { connect } from 'react-redux';
-import * as action from '../../../StateManagement/Actions/actions';
-import * as helperFunction from '../../../helper';
-class Works extends React.Component {
+import * as action from '../../StateManagement/Actions/actions';
+import * as helperFunction from '../../helper'
+
+
+class WorkList extends React.Component {
     componentDidMount() {
         this.props.getWorkData()
     }
-    workFourHomePage = () => {
-        const worksFourHomePage = this.props.worksData.filter(work => work.id < 5);
-        return worksFourHomePage
-    }
+
     render() {
-     
         if (this.props.loading) {
             return (
                 <div style={{ width: '1280px', height: '100vh' }}>
@@ -22,13 +19,11 @@ class Works extends React.Component {
                 </div>
             )
         }
-        const workFourHomePage = this.workFourHomePage()
-        console.log('render',workFourHomePage)
         return (
             <div>
 
                 {
-                    workFourHomePage.map((work,i) => 
+                    this.props.worksData.map((work,i) => 
                       <Work work={work} key={i} />
                     )
                   
@@ -49,4 +44,4 @@ const mapDispatchToState = dispatch => {
         getWorkData: () => dispatch(action.getWorkData())
     }
 }
-export default connect(mapStateToProps, mapDispatchToState)(Works);
+export default connect(mapStateToProps, mapDispatchToState)(WorkList);

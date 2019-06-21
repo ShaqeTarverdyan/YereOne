@@ -6,8 +6,12 @@ import Header from './Components/Header/index';
 import Home from './Components/Home/index';
 import ServicePage from './Components/Services/index';
 import Footer from './Components/Footer/index';
+import PortfolioPage from './Components/Portfolio/index';
 import MagentoServicesComponent from './Components/Services/MagentoServices/index';
-import {getBannerData } from './StateManagement/Actions/actions'
+import OnlineStore from './Components/Services/OnlineStore/index';
+import WebsiteDesign from './Components/Services/WebsiteDesign/index';
+import logoDesign from './Components/Services/LogoDesign/index';
+
 function App() {
   return (
     <Router>
@@ -16,7 +20,11 @@ function App() {
         <Switch>
           <Route path='/' exact component={Home} />
           <Route path='/service' component={ServicePage} />
+          <Route  path='/portfolio' component={PortfolioPage}/>
           <Route  path='/magento-development-services' component={MagentoServicesComponent}/>
+          <Route path='/online-store-design-and-development' component={OnlineStore}/>
+          <Route  path='/website-design-and-development' component={WebsiteDesign}/>
+          <Route path='/logo-and-brand-identity-design' component={logoDesign}/>
         </Switch>
         <Footer/>
       </div>

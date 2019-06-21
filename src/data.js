@@ -41,7 +41,9 @@ export const recentWorks = [
         image2:'https://www.yereone.com/media/portfolio/colmag-3-screens1-1200x1200.jpg',
         image3:'https://www.yereone.com/media/portfolio/colmag-3-screens-1200x1200.jpg',
         content1:'With 20 years of successful experience, Colmag offers the quality of reading glasses and sunglasses, Colmag Boutique is also available online. An incomparable choice of classic and trendy style in a wide range of colors at a discounted price. All forms and styles rounded or square, oversized or oval, aviator or clubmaster, there is something for all tastes.',
-        content2:"Our client wanted his website developement to be done on Magento 2 platform Our client provided us with the PSD files and the idea how they want to work his website after the end of this project.We have created some functionalities that help our client sell his product online."
+        content2:"Our client wanted his website developement to be done on Magento 2 platform Our client provided us with the PSD files and the idea how they want to work his website after the end of this project.We have created some functionalities that help our client sell his product online.",
+        type:'online-shop',
+        url:"colmagboutique"
     },
     {
         id:2,
@@ -50,7 +52,9 @@ export const recentWorks = [
         image2:'https://www.yereone.com/media/portfolio/meatfish-screens-600.png',
         image3:'https://www.yereone.com/media/portfolio/meatfish-iphone.jpg',
         contact1:'Meatfish is a dutch company selling meats of fishes. This is their online store, where you can buy and order meat.The current project was executed by our specialists in 2016 within 2 month.',
-        content2:'Meatfish.nl is based on Magento v1.9. Client provided PSD files and we followed them to make website look like how client wanted. We did a lot of customisations as per client’s requirements. We changed home page layout, banners, did the responsive design. Product, category, cart and checkout pages are also modified as per client’s PSD files.'
+        content2:'Meatfish.nl is based on Magento v1.9. Client provided PSD files and we followed them to make website look like how client wanted. We did a lot of customisations as per client’s requirements. We changed home page layout, banners, did the responsive design. Product, category, cart and checkout pages are also modified as per client’s PSD files.',
+        type:'online-shop',
+        url:"meatfish"
     },
     {
         id:3,
@@ -59,7 +63,9 @@ export const recentWorks = [
         image2:'https://www.yereone.com/media/portfolio/wedding-rings-co-uk-iphone-1024x1024.jpg',
         image3:'https://www.yereone.com/media/portfolio/wedding-rings-co-uk-screens-600x600.png',
         content1:'We are proud to present you our new partner, who has entrusted us with the creation of an online store. Wedding-Rings.co.uk is part of Hathaway Styles Limited, online retailers of high quality jewellery. They have been manufacturing quality jewellery in the UK for over 80 years which is sold throughout the UK in some of the finest jewellers. They are highly passionate about jewellery and have been involved in the jewellery industry for many years. Everyone can buy a handmade wedding ring that has been individually made by highly skilled craftspeople to their exacting requirements. They have access to talented designers and trades such as the assay office, all of which helps to make their business very efficient and enables them to send the chosen wedding ring without delay.',
-        content2:'Website is based on the Magento 2 platform. We implemented the provided PSD files and turned it into fully functional Magento 2 Online Shop, which has everything for doing online shopping.'
+        content2:'Website is based on the Magento 2 platform. We implemented the provided PSD files and turned it into fully functional Magento 2 Online Shop, which has everything for doing online shopping.',
+        type:'online-shop',
+        url:"weddingrings-co-uk-online-store-development"
     },
     {
         id:4,
@@ -68,7 +74,9 @@ export const recentWorks = [
         image2:'https://www.yereone.com/media/portfolio/classic-creations-screens.png',
         image3:'https://www.yereone.com/media/portfolio/classic-creations-mobile.jpg',
         content1:'Classic Creations is a Canadian company, selling wedding and engagement rings. The webshop was created by Yereone in close cooperation with Classic Creations and using the Magento 1 eCommerce platform. The project was executed by our specialists in 2016 within 2 months.',
-        content2:'Classiccreations.com is based on Magento v1.9. It was creating according to the provided PSD files and instructions. We did a lot of customisations as per client’s requirements. We changed home page layout, banners, did the responsive design. Product, category, cart and checkout pages are also modified as per client’s PSD files.'
+        content2:'Classiccreations.com is based on Magento v1.9. It was creating according to the provided PSD files and instructions. We did a lot of customisations as per client’s requirements. We changed home page layout, banners, did the responsive design. Product, category, cart and checkout pages are also modified as per client’s PSD files.',
+        type:'online-shop',
+        url:"classic-creations"
     },
     {
         id:'5',
@@ -83,25 +91,58 @@ export const recentWorks = [
     },
     {
         id:'6',
-        name:'Napoon',
-        image:'',
-        image2:'',
-        image3:'',
-        content1:'',
-        content2:'',
-        type:'',
-        url:""
+        name:'Fitnessreality',
+        image:'https://www.yereone.com/static/version1560548904/frontend/Yereone/default/en_US/Yereone_Portfolio/images/ironman-300x300.jpg',
+        image2:'https://www.yereone.com/media/portfolio/fitnessreality-screens.png',
+        image3:'https://www.yereone.com/media/portfolio/fitnessreality-mobile.jpg',
+        content1:'Fitnessreality is a company that sells fitness equipment. This is their online store, where you can buy bikes, ellipticals,treadmills and many more.The project was completed by our specialists in 2016 during 2 months.',
+        content2:'Fitnessreality.com is based on Magento v2.Client provided PSD files and we followed them to make website look like how client wanted. We did a lot of customisations as per client’s requirements. We changed home page layout, banners, did the responsive design. Product, category, cart and checkout pages are also modified as per client’s PSD files.',
+        type:'online-shop',
+        url:"fitnessreality"
     },
     {
         id:'5',
-        name:'Besselingbouwcombinatie',
-        image:'',
+        name:'Napoon',
+        image:'https://www.yereone.com/static/version1560548904/frontend/Yereone/default/en_US/Yereone_Portfolio/images/napoon.nl-300x300.jpg',
+        image2:'https://www.yereone.com/wp-content/uploads/2017/11/Napoon.nl-.png',
+        image3:'https://www.yereone.com/wp-content/uploads/2017/08/nappon-mobile.png',
+        content1:'Napoon is an Dutch company.The current project was executed by our specialists in 2016 within 1 month.',
+        content2:'Napoon.nl is based on WordPress CMS. Client provided PSD files and we followed them to make website look like how client wanted. We did a lot of customisations as per client’s requirements. We changed home page layout, banners, did the responsive design. Post, category, contacts pages are also modified as per client’s PSD files.',
+        type:'website',
+        url:"napoon"
+    },
+    {
+        id:'6',
+        name:'Website development for Kokooil',
+        image:'https://www.yereone.com/static/version1560548904/frontend/Yereone/default/en_US/Yereone_Portfolio/images/kokooil-300x300.jpg',
+        image2:'https://www.yereone.com/media/portfolio/kokooil-screens-1200x1200.jpg',
+        image3:'',
+        content1:'The Kokoil pulling is a natural way to detoxify your body.This technique has been around for centuries and has its origins in Ayurvedic medicine.Ayurveda is a health doctrine that originates from India and is recognized by the World Health Organization (WHO).According to experts, oil pulling is already mentioned in the Charaka Samhita, a very old text in Sanskrit on which Ayurvedic health doctrine is based.',
+        content2:'',
+        type:'website',
+        url:""
+    },
+    {
+        id:'7',
+        name:'Dealsondisplay',
+        image:'https://www.yereone.com/static/version1560548904/frontend/Yereone/default/en_US/Yereone_Portfolio/images/deals-on-display-400x400.png',
         image2:'',
         image3:'',
-        content1:'',
+        content1:'Dealsondisplay is an online store that sells Projectors, Monitors, Digital Photo Frames and Accessories. This is their online store, where you can their products.The project was completed by our specialists in 2016 within 2 months.',
+        content2:'Dealsondisplay.com is based on Magento v2. We were provided the PSD files and we followed them to make website look like how client wanted. We did a lot of customisations as per client’s requirements. We changed home page layout, banners, did the responsive design. Product, category, cart and checkout pages are also modified as per client’s PSD files.',
+        type:'online-shop',
+        url:"dealsondisplay"
+    },
+    {
+        id:'8',
+        name:'Entrenami Logo Design',
+        image:'https://www.yereone.com/static/version1560548904/frontend/Yereone/default/en_US/Yereone_Portfolio/images/entrenami-logo-design-300x300.jpg',
+        image2:'',
+        image3:'',
+        content1:'Entrenami is our new partner who trusted us to handle in all the process of logo design creation.It’s is a web platform where users can explore, discover and reserve fitness options. The name is “Entrenami” and the slogan in spanish is “Entrena mi cuerpo, entrena mi mente” that translates into “Train my body, train my mind” so we represented that.For ‘Entrenami’ logo design we chose ‘‘heart’’ symbol. When starting to train mind and body, first of all, people should heal their hearts. It is generally believed, that everything starting from the changes we make inside of our hearts. By the way when starting to train body, people open their hearts as well. In the “heart” symbol we put the geometric shapes of two hemispheres. One is an intellect and the other is intuition.',
         content2:'',
-        type:'',
-        url:""
+        type:'logo-and-branding',
+        url:"entrenami-logo-design"
     }
 ]
 
