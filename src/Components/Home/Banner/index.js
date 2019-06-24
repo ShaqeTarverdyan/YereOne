@@ -4,8 +4,8 @@ import BannerText from './BannerText';
 
 
 
-class Banner extends React.Component {
-    render() {
+const Banner = () =>  {
+
         return (
             <div className='bannerContent'>
                 <BannerText />
@@ -13,5 +13,4 @@ class Banner extends React.Component {
         );
     }
 
-}
 export default Banner;

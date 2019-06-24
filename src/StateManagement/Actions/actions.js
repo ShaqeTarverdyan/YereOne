@@ -2,41 +2,40 @@ import axios from 'axios';
 import { setup } from 'axios-cache-adapter'
 
 
-export const loading = () => {
+export const loadingBannerData = () => {
     return {
-        type: 'LOADING'
+        type: 'LOADING_BANNER_DATA'
     }
 }
+export const loadingServicedata = () => {
+    return {
+        type: 'LOADING_SERVICE_DATA'
+    }
+}
+export const loadingPortfolioData = () => {
+    return {
+        type: 'LOADING_PORTFOLIO_DATA'
+    }
+}
+
 export const error = () => {
     return {
         type: 'ERROR'
     }
 }
 
-
-const api = setup({
-    baseURL: 'https://api.myjson.com',
-    cache: {
-        maxAge: 15 * 60 * 1000,
-    }
-})
-
-api.get('/bins/tuhst').then((response) => {
-    // console.log('responseeeee', response.data)
-    getBannerDataSucces(response.data)
-})
-
-// api.get('/bins/tuhst', {
-//     cache:{
-//         maxAge:2 * 60  * 1000, 
+// const api = setup({
+//     baseURL: 'https://api.myjson.com',
+//     cache: {
+//         maxAge: 15 * 60 * 1000,
 //         exclude: { query: false } 
 //     }
 // })
-// .then((response) => {
-//     console.log('resp', response.data)
+
+
+// api.get('/bins/tuhst').then((response) => {
+//     getBannerDataSucces(response.data)
 // })
-
-
 
 export const getBannerDataSucces = (resp) => {
     return {
@@ -47,7 +46,7 @@ export const getBannerDataSucces = (resp) => {
 }
 export const getBannerData = () => {
     return (dispatch) => {
-        // dispatch(loading());
+        // dispatch(loadingBannerData());
         return axios.get('https://api.myjson.com/bins/tuhst')
             .then(resp => {
                 dispatch(getBannerDataSucces(resp.data))
@@ -66,7 +65,7 @@ export const getServiceDataSucces = (resp) => {
 }
 export const getServiceData = () => {
     return (dispatch) => {
-        // dispatch(loading());
+        // dispatch(loadingServicedata());
         return axios.get('https://api.myjson.com/bins/7p0p1')
             .then(resp => {
                 dispatch(getServiceDataSucces(resp.data))
@@ -87,7 +86,7 @@ export const getWorkDataSucces = (resp) => {
 
 export const getWorkData = () => {
     return (dispatch) => {
-        dispatch(loading());
+        // dispatch(loadingPortfolioData());
         axios.get('https://api.myjson.com/bins/hbrsp')
             .then(resp => {
                 dispatch(getWorkDataSucces(resp.data.works))

@@ -12,23 +12,53 @@ import OnlineStore from './Components/Services/OnlineStore/index';
 import WebsiteDesign from './Components/Services/WebsiteDesign/index';
 import logoDesign from './Components/Services/LogoDesign/index';
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Header />
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/service' component={ServicePage} />
-          <Route  path='/portfolio' component={PortfolioPage}/>
-          <Route  path='/magento-development-services' component={MagentoServicesComponent}/>
-          <Route path='/online-store-design-and-development' component={OnlineStore}/>
-          <Route  path='/website-design-and-development' component={WebsiteDesign}/>
-          <Route path='/logo-and-brand-identity-design' component={logoDesign}/>
-        </Switch>
-        <Footer/>
-      </div>
-    </Router>
-  );
+import { connect } from 'react-redux';
+import * as action from './StateManagement/Actions/actions'
+import * as helperFunction from './helper';
+
+class App extends React.Component {
+  componentDidMount() {
+    this.props.getBannerData()
+    this.props.getServiceData()
+    this.props.getWorkData()
+    
 }
-export default App;
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <Header />
+          <Switch>
+            <Route path='/' exact component={Home} />
+            <Route path='/service' exact component={ServicePage} />
+            <Route path='/portfolio' exact component={PortfolioPage} />
+            <Route path='/magento-development-services' component={MagentoServicesComponent} />
+            <Route path='/online-store-design-and-development' component={OnlineStore} />
+            <Route path='/website-design-and-development' component={WebsiteDesign} />
+            <Route path='/logo-and-brand-identity-design' component={logoDesign} />
+          </Switch>
+          <Footer />
+        </div>
+      </Router>
+    );
+  }
+
+}
+
+const mapStateToProps = state => {
+  console.log('stateApp',state)
+  return {
+      loading:state.reducerBanner.loading,
+      bannerData:state.reducerBanner.bannerData,
+      worksData:state.reducerWorks.worksData,
+      servicesData:state.reducerService.servicesData
+  }
+}
+const mapDispatchToState = dispatch => {
+  return {
+      getBannerData:() => dispatch(action.getBannerData()),
+      getServiceData:() => dispatch(action.getServiceData()),
+      getWorkData:() => dispatch(action.getWorkData())
+  }
+}
+export default connect(mapStateToProps,mapDispatchToState)(App);

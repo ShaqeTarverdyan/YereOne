@@ -8,7 +8,7 @@ const reducerWorks = (state = initialState, action) => {
   
     const newState = { ...state }
     switch (action.type) {
-        case 'LOADING':
+        case 'LOADING_PORTFOLIO_DATA':
             return { loading: true }
         case 'ERROR':
             return { error: true }

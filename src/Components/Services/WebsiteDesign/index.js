@@ -25,9 +25,6 @@ class WebsiteDesign extends React.Component {
                             <p> {webDesignData.content1} </p>
                             <p> {webDesignData.content2} </p>
                             <p> {webDesignData.content3} </p>
-                            <p>
-                                
-                            </p>
                         </Grid.Column>
                         <Grid.Column>
                             <img src={webDesignData.image2} alt='yereone' />

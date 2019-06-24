@@ -8,7 +8,7 @@ const reducerService = (state = initialState, action) => {
   
     const newState = { ...state }
     switch (action.type) {
-        case 'LOADING':
+        case 'LOADING_SERVICE_DATA':
             return { loading: true }
         case 'ERROR':
             return { error: true }
@@ -25,4 +25,5 @@ const reducerService = (state = initialState, action) => {
             return newState
     }
 }
+
 export default reducerService;

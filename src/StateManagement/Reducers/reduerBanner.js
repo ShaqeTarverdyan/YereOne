@@ -1,12 +1,12 @@
 const initialState = {
     loading: false,
     error: false,
-    bannerData: '',
+    bannerData: {},
 }
 const reducerBanner = (state = initialState, action) => {
     const newState = { ...state }
     switch (action.type) {
-        case 'LOADING':
+        case 'LOADING_BANNER_DATA':
             return { loading: true }
         case 'ERROR':
             return { error: true }

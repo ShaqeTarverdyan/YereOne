@@ -1,14 +1,11 @@
 import React from 'react';
 import './serviceStyle.css';
-import { BrowserRouter as Router, Link } from "react-router-dom";
 import Services from './Services';
 import { Container } from 'semantic-ui-react';
 import * as title from '../../Titles/Titles';
-import { connect } from 'react-redux';
-import * as action from '../../../StateManagement/Actions/actions';
+
 
 class MainServices extends React.Component {
- 
     render() {
         return (
             <div className='servicesStyle'>
@@ -26,17 +23,6 @@ class MainServices extends React.Component {
         );
     }
 }
-const mapStateToProps = state => {
-    return {
-        bannerData: state.bannerData,
-        servicesData:state.servicesData
-    }
-}
-const mapDispatchToState = dispatch => {
-    return {
-        getBannerData: () => dispatch(action.getBannerData()),
-        getServiceData:() => dispatch(action.getServiceData())
-    }
-}
-export default connect(mapStateToProps, mapDispatchToState)(MainServices);
+
+export default MainServices;
 

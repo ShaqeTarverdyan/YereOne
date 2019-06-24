@@ -9,10 +9,18 @@ import store from './StateManagement/Store/store';
 import { Provider } from 'react-redux';
 
 
+import { ApolloProvider } from 'react-apollo';
+import client from './StateManagement/Queries/client'
+
+
 ReactDOM.render(
-    <Provider store={store}>
-        <App />
-    </Provider>
+    <ApolloProvider client={client}>
+        <Provider store={store}>
+            <App />
+        </Provider>
+    </ApolloProvider>
+
+
     , document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

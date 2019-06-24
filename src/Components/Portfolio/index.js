@@ -1,8 +1,7 @@
 import React from 'react';
 import WorkList from './WorkList';
 
-class PortfolioPage extends React.Component {
-    render() {
+const PortfolioPage = () => { 
         return (
             <div style={{textAlign:'center', maxWidth:'1280px'}}>
                 <hr />
@@ -12,6 +11,5 @@ class PortfolioPage extends React.Component {
             </div>
         );
     }
-}
 
 export default PortfolioPage;
